@@ -39,8 +39,26 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="files/uploads/favicon.png"/>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+   
+    
+   jQuery(document).ready(function($) {
+    $(".scrollSlow").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 3500);
+    });
+});
   
+   jQuery(document).ready(function($) {
+    $(".scrollFast").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    });
+});
+        
+    </script>
 
 </head>
 
@@ -66,9 +84,9 @@
 			
             <!-- LOGO -->
             <div id="logo">
-                <a href="index-architecture.html">
+                <a href="#">
                 	
-                	<img id="light-logo" src="files/uploads/logo-light.png" style="max-height: 60px !important;" alt="Logo light">
+                	<img id="light-logo" src="files/uploads/logo-light.png" style="max-height: 54px !important;" alt="Logo light">
                 </a>
             </div>
             
@@ -82,12 +100,13 @@
                     <nav id="main-nav">
                         <ul class="underline">
                            
-                            <li><a href="#studies"><span>Case Studies</span></a></li>
-                            <li><a href="#portfolio"><span>Clients</span></a></li>
-                            <li><a href="#testimonials"><span>Testimonials</span></a></li>
-                            <li><a href="#about"><span>About</span></a></li>
-                            <li><a href="#contact"><span>Contact</span></a></li>
-                            <li><a target="_blank" href="https://jdlindsay.typeform.com/to/o9ZjDi"><span>Book Now</span></a></li>
+                            <li><a href="#studies" class="scrollFast "><span>Case Studies</span></a></li>
+                            <li><a href="#portfolio" class="scrollFast "><span>Clients</span></a></li>
+                            <li><a href="#services" class="scrollFast "><span>Services</span></a></li>
+                            <li><a href="#testimonials" class="scrollFast "><span>Testimonials</span></a></li>
+                            <li><a href="#about" class="scrollFast "><span>About</span></a></li>
+                            <li><a href="#contact" class="scrollFast "><span>Contact</span></a></li>
+                            <li><a target="_blank" class="scrollFast " href="https://jdlindsay.typeform.com/to/o9ZjDi"><span>Book Now</span></a></li>
                            
                         </ul>
                     </nav>
@@ -99,7 +118,7 @@
 	<!-- HEADER end -->
     
     <!-- HERO  -->
-    <section id="hero" class="hero-full text-light parallax-section" style="background-size:105%; background-image: url(files/uploads/cover.jpg)">
+    <section id="hero" class="hero-full text-light parallax-section" style="min-height: 85vh !important; background-size:105%; background-image: url(files/uploads/cover.jpg)">
         <div id="page-title" class="post-title ">
             
             <h3>Hey there, I'm <strong>Josh &nbsp; <strong style="height: 1.3em; width: 1.3em; padding-bottom: 10px" class="em em-wave"></strong> <i style="height: 1.3em; width: 1.3em" class="em em-flag-ca"></i></strong></h3>
@@ -113,7 +132,7 @@
             <p>
 <a style="border-bottom: 1px solid rgba(255,255,255,1)" href="https://jdlindsay.typeform.com/to/o9ZjDi" target="_blank" class="button-medium-button"><strong>Book Now</strong></a>
 &nbsp;|&nbsp;
-<a class="button-medium-button scrollFast" style="border-bottom: 1px solid rgba(255,255,255, 1)" href="#services"><strong>See How</strong></a>
+<a class="button-medium-button scrollFast" style="border-bottom: 1px solid rgba(255,255,255, 1)" class="scrollFast " href="#studies"><strong>See How</strong></a>
 </p>
             
         </div> <!-- END #page-title -->
@@ -156,7 +175,7 @@
                     
                     <div class="spacer-medium"></div>
                     <p>
-                        <a href="about-architecture.html" class="sr-button-with-arrow">View the website</a>
+                        <a href="http://lyonslandscaping.com" target="_blank" class="sr-button-with-arrow">View the website</a>
                         
                         
                         </p>
@@ -175,7 +194,7 @@
                         
                     <div class="spacer-medium"></div>
                     <p>
-                        <a href="about-architecture.html" class="sr-button-with-arrow">View the website</a>
+                        <a href="http://qmarine.com" class="sr-button-with-arrow">View the website</a>
                         
                         
                         </p>
@@ -194,7 +213,7 @@
         	<div class="fullwidth-content wrapper-small align-center">
                 
                
-                <p><img src="files/uploads/logo-light.png" style="height: 110px"  alt="Logo light"></p>
+                
                 <div class="spacer-medium"></div>
                 <h2>Need help with something similar? Let's build something special. <i style="height: 1.3em; width: 1.3em" class="em em-fire"></i></h2>
             	<div class="spacer-medium"></div>
@@ -299,9 +318,84 @@
           <div class="spacer-big"></div>
               
         
-        
+        <div class="fullwidth-section text-light" style="background:url(files/uploads/4.jpg) center center; background-size:cover;">
+        	<div class="fullwidth-content wrapper-small align-center">
+                
+               
+                <div class="spacer-medium"></div>
+                <h2>Making a great website doesn't have to be difficult. <i style="height: 1.3em; width: 1.3em" class="em em-wink"></i></h2>
+            	<div class="spacer-medium"></div>
+                <p><a href="" class="sr-button-with-arrow">Read Now <em>(Coming Soon)</em></a></p>
+                
+            </div>
+        </div>
          
-<div class="fullwidth-section text-light" style="background:url(files/uploads/1.jpg) center center; background-size:cover;"><a id="testimonials"></a>
+
+     
+        
+        <div class="spacer-big " id="services"></div>
+<div class="wrapper align-center">
+    <div id="" class="column-section clearfix spaced-normal ">
+        <div class="column one-full last-col ">
+            <h2 style="text-align: center;">
+<h6 class="title-alt align-left  uppercase">My Services</h6>
+<h3><strong>Find new customers and build an audience who trusts you.</strong></h3>
+<h4>Reaching people online seems difficult, <em>but it's actually easier than ever.</em></h4>
+<div class="spacer-medium"></div>
+<div class="spacer-left"></div>
+<a target="_blank" href="https://jdlindsay.typeform.com/to/o9ZjDi">
+<div class="wrapper">
+<div class="column-section clearfix">
+<div class="column one-fourth align-center">
+<i class="ion ion-ios-monitor-outline ion-6x"></i>
+<h4>Web Design</h4>
+<p>Use your story to connect with your audience.</p>
+</div>
+<div class="column one-fourth align-center">
+<i class="ion ion-ios-list-outline ion-6x"></i>
+<h4>Social Posts</h4>
+<p>Send photos, have them published daily on every social network. </p>
+</div>
+ <div class="column one-fourth align-center">
+<i class="ion ion-ios-speedometer-outline ion-6x"></i>
+<h4>Social Growth</h4>
+<p>I'll keep your audience involved by engaging on your behalf.</p>
+</div>
+<div class="column one-fourth last-col align-center">
+<i class="ion ion-ios-paper-outline ion-6x"></i>
+<h4>Advertising</h4>
+<p>Reach folks with an interest in your business using targeted FB ads.</p>
+</div>
+</div>
+<div class="column-section clearfix">
+<div class="column one-fourth align-center">
+<i class="ion ion-ios-email-outline ion-6x"></i>
+<h4>Booking</h4>
+<p>Advance the sales process with an eye-catching booking page.</p>
+</div>
+<div class="column one-fourth align-center">
+<i class="ion ion-ios-cloud-outline ion-6x"></i>
+<h4>Branding</h4>
+<p>Make a great impression with a beautiful logo, colours & typography.</p>
+</div>
+<div class="column one-fourth align-center">
+<i class="ion ion-ios-settings ion-6x"></i>
+<h4>Content</h4>
+<p>Social posts with copywriting that communicates your value.<p>
+</div>
+<div class="column one-fourth last-col align-center">
+<i class="ion ion-ios-analytics ion-6x"></i>
+<h4>Planning</h4>
+<p>Delve into your business value and why others should care.</p>
+</div>
+</div>
+</div> 
+</a>
+</div></div></div>
+    
+    
+   <div class="spacer-big"></div>
+    <div class="fullwidth-section text-light" style="background:url(files/uploads/1.jpg) center center; background-size:cover;"><a id="testimonials"></a>
 <div class="wrapper" style="padding-top: 72px; padding-bottom: 32px; padding-left:24px; padding-right:24px;">
 <h2><strong>Testimonials</strong></h2>
 </div>
@@ -317,8 +411,12 @@
 </div>
 </div>
 </div> 
-        
+    
+    
+    
+       
         <div class="wrapper-big">
+            
             <a id="about"></a>
              <div class="spacer-big"></div>
             
@@ -327,7 +425,7 @@
             	<div class="column one-third">
             		<div class="single-title">
                        <h2><strong>About Me</strong></h2>
-                       <h5 class="title-alt">Work & Projects</h5>
+                       <!--<h5 class="title-alt">Work & Projects</h5>-->
                     </div>
                 </div>
                 <div class="column two-third last-col">
@@ -340,8 +438,10 @@
                     <h5 class="title-alt"><strong>Contact</strong></h5>
                     <ul class="socialmedia-widget  align-left ">
                         
-                        <li><a href="mailto:me@jdlindsay.com">Email: <strong>me@jdlindsay.com</strong></a><li> <li>&nbsp;|&nbsp;</li>
-                        <!--
+                        <li><a href="mailto:me@jdlindsay.com">Email: <strong>me@jdlindsay.com</strong></a><li>  <li>&nbsp;|&nbsp;</li> <li class="twitter"><a href="https://twitter.com/kraahkan" target="_blank"></a></li><li class="facebook"><a href="https://facebook.com/kraahkaan" target="_blank"></a></li><li class="instagram"><a href="https://instagram.com/kraahkan" target="_blank"></a></li>
+                      
+
+                     <!--
                         <li class="facebook"><a href="#"></a></li>
                         <li class="twitter"><a href="#"></a></li>
                         <li class="behance"><a href="#"></a></li>
@@ -349,10 +449,44 @@
                     </ul>
                 </div>
             </div>
+    </div>
+    <div class="spacer spacer-big"></div>
+    <div class="wrapper-big">
+            <div class="column-section clearfix">
+            
+                
+                 
+                    
+                    
+                    
+                
+                <div class="column two-third last-col">
+                    
+                    
+                    <div style="border-style: solid; height:250px !important; border-width: 4px; border-color: black">
+                    <iframe  title="Makerlog Embed" height="250" style="width:100%" scrolling="no" frameborder="1" allowtransparency="true" src="https://api.getmakerlog.com/users/188/embed"></iframe></div>
+                   
+                    
+                    
+                    
+                </div>
+                <div class="column one-third align-right">
+            		<div class="single-title">
+                       <h2><strong>My Work</strong></h2>
+                       <!--<h5 class="title-alt">Work & Projects</h5>-->
+                    </div>
+                </div>
+                
+                
+            </div>
+           
+
+            
+            
         </div>
-        <a id="contact">
+       
         <div class="spacer-big"></div>
-        
+        <a id="contact">
         
         <div class="fullwidth-section text-light" style="background:url(files/uploads/3.jpg) center center; background-size:cover;">
         	<div class="fullwidth-content wrapper-small align-center">
