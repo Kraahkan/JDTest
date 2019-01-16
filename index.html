@@ -807,7 +807,7 @@
 <script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>
 <script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="files/js/script.js"></script>
->
+
 <!-- Start of Async Drift Code -->
 <script>
 "use strict";
@@ -835,16 +835,48 @@
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('fir3iy9yvydt');
 	</script>
+		
+		
 	<script>
 	
-	drift.config({
-	
- welcomeMessageDelay: 50000,
+drift.on('ready',function(api, payload) {
+ 
 })
+</script>	
 			
-</script>
-			<!-- End of Async Drift Code -->	
-<!-- SCRIPTS -->
 
+	
+	<script>
+
+  drift.config({
+   locale: 'en-US',
+    messages: {
+     welcomeMessage: 'Hey there!',
+      awayMessage: "Hey, we're not here right now, but leave a message.",
+      emailCaptureMessage: "Leave your email so we can get back to you.",
+      thankYouMessage: "Thanks we'll follow up soon."
+    },
+    enableWelcomeMessage: false,
+    enableCampaigns: false,
+    enableChatTargeting: false,
+    backgroundColor: '#000000',
+    foregroundColor: '#ffffff',
+    activeColor: '#00ff00',
+    textColor: '#ffffff',
+    autoAssignee: {
+      name: 'Trevor Rundell',
+      title: 'Engineer',
+      email: 'trevor@example.com',
+      avatarUrl: 'https://s.gravatar.com/avatar/...',
+    },
+    inboxId: 1,
+    cookieDomain: '.example.com',
+    welcomeMessageDelay: 5000,
+    disableNewConversations: true,
+  })
+  
+</script>	
+	
+	
 </body>
 </html>
